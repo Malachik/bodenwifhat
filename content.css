@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body{
+  
+    /* font-family: "Courgette", cursive; */
+    /* height: 100vh; */
+   
+    background-color:rgba(35, 35, 197, 0.87);
+}
+
+.container{
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+    justify-content: space-between;
+   
+
+}
+
+
+.content{
+   
+   justify-content: center;
+   margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    transform-style: preserve-3d;
+    animation: animate 30s linear infinite;
+    margin: 2rem;
+    padding: ;
+
+}
+
+.spinning{
+    display: flex;
+    background-color: whitesmoke;
+    margin-top: ;
+    padding: 5rem;
+   
+   
+}
+
+.spinning_pic{
+    display: flex;
+    position: relative;
+   margin: 2rem;
+   border-radius: 20px;
+}
+
+.spinning_pic2{
+    display: flex;
+    position: relative;
+    margin: 2rem;
+   border-radius: 20px;
+   
+   
+}
+
+.c__memes{
+  
+   text-align: center;
+    position: relative;
+   padding-top: 3rem;
+    background-color: whitesmoke;
+    font-size: 3rem;
+    color: rgba(0, 0, 255, 0.719);
+    font-weight: 100;
+
+    
+    
+  
+  
+  
+}
+
+
+
+
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(-337deg);
+    }
+}
+
+.content span{
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    right:0;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(370px);
+    
+}
+
+.content span img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+
+.content span img:hover{
+    transform: translateY(30px) scale(1.2);
+    cursor: pointer;
+    
+}
+
+.content{
+
+    left: 40%;
+    bottom: -20px;
+    
+}
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container{
+        max-width: 1280px;
+    }
+}
+
+/* xl */
+@media (max-width :1280px) {
+    .container{
+        max-width: 1024px;
+    }
+
+
+    .spinning{
+        background-color: whitesmoke;
+        margin-top: 8rem;
+        overflow: hidden;
+
+        
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container{
+        max-width: 768px;
+    }
+
+    .spinning_pic{
+        display: flex;
+        position: absolute;
+        right: 0rem;
+
+        opacity: 1%;
+overflow: hidden;
+        display: none;
+    }
+    
+    .spinning_pic2{
+
+        display: none;
+        position: absolute;
+
+        opacity: 1%;
+        
+    }
+
+    
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container{
+        max-width: 640px;
+    }
+
+   
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .container{
+        max-width: 475px;
+    }
+    .c__memes{
+        display: none;
+    }
+}
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .container{
+        max-width: 100px;
+    }
+
+
+    .memes_1{
+        display: none;
+    }
+
+    .buy__box__main{
+        overflow: hidden;
+    }
+}

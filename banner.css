@@ -1,0 +1,278 @@
+@font-face {
+    font-family: bob;
+    src: url(fonts/Gilles_Handwriting.ttf);
+    
+   
+}
+
+
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.container{
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 0.5rem;
+}
+
+body{
+    font-family: bob;
+    /* font-family: "Courgette", cursive; */
+    /* height: 100vh; */
+    
+    background-color:rgba(35, 35, 197, 0.87);
+}
+
+/* banner photo */
+.banner__box {
+    
+    margin: 3rem;
+    overflow: hidden;
+   
+   
+}
+
+.banner__img{
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20PX;
+    
+    
+}
+
+/* banner menu */
+
+.banned__menu2{
+    
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+.banned__link{
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.title__img{
+    border-radius: 20PX;
+}
+.href {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out ;
+    transition-delay: ;
+}
+
+.href:hover {
+    color: red;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+
+
+
+/* media section */
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container{
+        max-width: 100%;
+    }
+
+    
+    .banner__img{
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .banned__link{
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 0.5rem;
+      }
+
+
+      .banned__menu2{
+        
+        padding: 1rem;
+        text-align: center;
+    }
+    
+}
+
+/* xl */
+@media (max-width :1280px) {
+    .container{
+        max-width: 1024px;
+    }
+
+    .banner__img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .banned__link{
+        text-decoration: none;
+        font-size: 1.3rem;
+        margin: 0.5rem;
+      }
+    
+ 
+      .banned__menu2{
+        
+        padding: 1rem;
+        text-align: center;
+    }
+
+}
+
+
+/* lg */
+@media (max-width: 1024px) {
+    .container{
+        max-width: 768px;
+    }
+
+    .banner__img{
+        max-width: 100%;
+        height: auto;
+    }
+    .banned__link{
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 0.4rem;
+      }
+    
+}
+    
+
+
+/* md */
+@media (max-width: 768px) {
+    .container{
+        max-width: 640px;
+    }
+
+    
+
+    .banner__img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    .banned__link{
+        text-decoration: none;
+        font-size: 1rem;
+        margin:0;
+      }
+    
+      .banned__menu2{
+        
+        padding: 1rem;
+        text-align: center;
+    }
+
+}
+   
+
+
+/* sm */
+@media (max-width: 640px) {
+    .container{
+        max-width: 475px;
+    }
+
+    
+    .banner__img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .banned__link{
+        text-decoration: none;
+        font-size: 0.7rem;
+        margin: auto;
+      }
+
+
+
+      .banned__menu2{
+        
+        padding: 1rem;
+        text-align: center;
+    }
+      
+    }
+
+    
+    
+
+
+
+/* xs */
+@media (max-width: 475px) {
+    .container{
+        max-width: 100px;
+    }
+
+   
+
+    .banner__img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .banned__link{
+        text-decoration: none;
+        font-size: 0.5rem;
+        margin: 0.6rem;
+        color: red;
+
+        
+      }
+
+
+      .banned__menu2{
+        color: red;
+        padding: 1rem;
+        text-align: center;
+    }
+   
+       
+    }
+
+    
+
+    
+    
+
+
+
+
+.btn{
+    background-color: red;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin right: 1rem;
+    
+}

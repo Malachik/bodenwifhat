@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body{
+  
+    /* font-family: "Courgette", cursive; */
+    /* height: 100vh; */
+    
+    background-color:rgba(35, 35, 197, 0.87);
+}
+
+
+
+.contract__banner{
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+   
+}
+
+.contract1{
+    width: fit-content;
+    background-color:#ffffff1e;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+
+}
+
+
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container{
+        max-width: 1280px;
+    }
+
+
+    .contract__banner{
+        font-size: 1.1rem;
+    }
+}
+
+/* xl */
+@media (max-width :1280px) {
+    .container{
+        max-width: 1024px;
+    }
+
+    .contract__banner{
+        font-size: 1rem;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container{
+        max-width: 768px;
+    }
+
+    .contract__banner{
+        font-size: 0.9rem;
+    }
+    
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container{
+        max-width: 640px;
+    }
+
+    .contract{
+        font-size: 0.6rem;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .container{
+        max-width: 475px;
+    }
+
+    .contract{
+        font-size: 0.6rem;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .container{
+        max-width: 100px;
+    }
+
+    
+
+    .contract__banner{
+        font-size: 0.7rem;
+    }
+}
